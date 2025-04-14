@@ -14,8 +14,6 @@ const __dirname = path.dirname(__filename);
 
 dotenv.config({ path: path.join(__dirname, ".env") });
 
-app.use(express.json());
-app.use(cookieParser());
 app.use(
   cors({
     origin: "https://chat-frontend-one-omega.vercel.app/",
@@ -23,6 +21,8 @@ app.use(
   })
 );
 
+app.use(express.json());
+app.use(cookieParser());
 app.use("/api/auth", authRoutes);
 app.use("/api/messages", messageRoutes);
 
