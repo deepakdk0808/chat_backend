@@ -16,7 +16,7 @@ dotenv.config({ path: path.join(__dirname, ".env") });
 
 app.use(
   cors({
-    origin: "https://chat-frontend-one-omega.vercel.app/",
+    origin: "https://chat-frontend-one-omega.vercel.app",
     credentials: true,
   })
 );

@@ -7,7 +7,7 @@ const server = http.createServer(app);
 
 const io = new Server(server, {
   cors: {
-    origin: ["https://chat-frontend-one-omega.vercel.app/"],
+    origin: ["https://chat-frontend-one-omega.vercel.app"],
   },
 });
 
